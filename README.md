@@ -1,3 +1,2 @@
 # Welcome to my Portfolio
-this is a work in progress
-hellogit 
+This is currently a work in progress. The anticipated end result is a fully functional static webpage portfolio that will list my portfolio, an About Me page, and a contact form. 

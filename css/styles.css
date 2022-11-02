@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Roboto&display=swap');
+
+body {
+    margin: 0px;
+}
+
+h1 {
+    font-family: 'Nunito', sans-serif;
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+}
+
+main {
+margin-left:35px;
+margin-right:35px;
+}
+
+.webframe {
+    display: grid;
+    grid-template-rows: 2fr 80px 10fr 1fr ;
+    grid-template-columns: 1fr;
+    height: 100vh;
+}
+/*add media queries and specific pixel values for overall site layout; 100vh is too small */
+
+.header {
+    display: grid;
+    background-image: url(../img/wroclawb.png); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-row: 1/2;
+    height:275px;
+}
+
+/* image used in .header is stand-in for animation, gradient, etc. */
+
+nav {
+    grid-row:2/3;
+    display: inline-flex;
+    border-width:3px;
+    background-color:black;
+    justify-content: space-between;
+    padding-right:4px;
+}
+ 
+.tab {
+    display: flex;
+    width: 33%;
+    background-color:black;
+    border-style: solid;
+    border: 0;
+    transition: all 350ms ease;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+.t1:hover{
+    box-shadow: 5px 5px red, 6px 6px red, 7px 7px red;
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+.t2:hover{
+    box-shadow: 5px 5px lightskyblue, 6px 6px lightskyblue, 7px 7px lightskyblue;
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+.t3:hover{
+    box-shadow: 5px 5px greenyellow, 6px 6px greenyellow, 7px 7px greenyellow;
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.mainhomecontent {
+    display:grid;
+}
+
+/* media queries for larger screen size responsize design*/
+
+/* FONT: font-family: 'Nunito', sans-serif;
+font-family: 'Roboto', sans-serif; */
