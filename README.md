@@ -1,2 +1,2 @@
 # Welcome to my Portfolio
-This is currently a work in progress. The anticipated end result is a fully functional static webpage portfolio that will list my portfolio, an About Me page, and a contact form. 
+This is my Portfolio site, coded in HTML5 and CSS Gridm.
