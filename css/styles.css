@@ -16,6 +16,18 @@ h1 {
     padding-top: 5px !important;
 }
 
+h3 {
+        color: #8F8F8F;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 1.5em !important;
+        font-style: italic;
+        line-height: 0;
+    }
+
+h1:hover {
+    cursor: default;
+}
+
 p {
     font-family: 'Inter', sans-serif;
     margin: 10%;
@@ -43,7 +55,7 @@ p {
     grid-template-columns: 1fr;
     height: 100%;
     width: 100%;
-    background-image: url(../img/verttextbackground.png);
+    background-image: url(../img/verttextbackground2.png);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -92,7 +104,7 @@ p {
 
 .webframe {
     display: grid;
-    grid-template-rows: 2fr 1fr 10fr 1fr;
+    grid-template-rows: 2fr 1fr 10Fr 1fr;
     grid-template-columns: 1fr;
     height: 100vh;
 }
@@ -100,45 +112,120 @@ p {
 .mainhomecontent {
     grid-row: 3/4;
     display: grid;
-    height: auto;
+    height: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr 2fr 1fr 2fr;
     background-color: white;
-    padding-left:78px;
-     padding-right:78px;
-     margin-bottom: -30px !important;
-     background-color: white;
+    padding-bottom: 15%;
+    padding-Top: 4%;
+}
+
+.portfolioheaderbox {
+    grid-row: 1/2;
+    display: grid;
+    row-gap: 0;
+    grid-template-rows: 0.8fr 0.5fr;
+    background-image: url(../img/portfoliohbg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pheader {
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+}
+
+.ptext {
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.splitter0 {
+    grid-row: 2/3;
+    background-image: url(../img/portfoliobg2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#portfolioheader{
+    color: #8F8F8F;
+    font-size: 3.2em !important;
+}
+
+#exampleheader {
+    color: #8F8F8F;
+    font-size: 1.5em !important;
 }
 
 .example1 {
-    grid-row: 1/2;
-    height: 400px;
+    grid-row: 3/4;
+    height: 675px;
     display: grid;
-    margin-top: 20px;
-    margin-bottom: 20px;
     grid-template-rows: 2fr 1fr;
     grid-template-columns: 1fr; 
     background-color: lightgrey;
+    margin-left:30px;
+    margin-right:30px;
+}
+
+.splitter1{
+    grid-row: 4/5;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    background-image: url(../img/portfoliobg2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .example2 {
-    grid-row: 2/3;
-    height: 400px;
+    grid-row: 5/6;
+    height: 675px;
     display: grid;
-    margin-bottom: 20px;
     grid-template-rows: 2fr 1fr;
     grid-template-columns: 1fr; 
     background-color: lightgrey;
+    margin-left:30px;
+    margin-right:30px;
+}
+
+.splitter2{
+    grid-row: 6/7;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    background-image: url(../img/portfoliobg2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .example3 {
-    grid-row: 3/4;
-    height: 400px;
+    grid-row: 7/8;
+    height: 675px;
     display: grid;
-    margin-top: -20px !important;
     grid-template-rows: 2fr 1fr;
     grid-template-columns: 1fr; 
     background-color: lightgrey;
+    margin-left:30px;
+    margin-right:30px;
 }
 
 .imgframe {
@@ -146,11 +233,8 @@ p {
     display:grid;
     grid-template-rows: 4fr 3fr 1fr;
     grid-template-columns: 1fr 1fr;
-    height: 400px;
+    height: 675px;
     grid-row: 1/3;
-    border-style: solid;
-    border-color: black;
-    border-width: 1px;
 }
 
 .description {
@@ -160,8 +244,9 @@ p {
     height: 100%;
     width: 100%;
     flex-direction: column; 
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-top: 10px;
 }
 
 .description2 {
@@ -171,8 +256,9 @@ p {
     height: 100%;
     width: 100%;
     flex-direction: column; 
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-top: 10px;
 }
 
 .textbox {
@@ -248,11 +334,6 @@ p {
     color: black !important;
     font-family: 'Inter', sans-serif;
 }
-
-/*add media queries and specific pixel values for overall site layout; 100vh is too small */
-
-
-/* image used in .header is stand-in for animation, gradient, etc. */
 
 nav {
     grid-row:2/3;
@@ -330,6 +411,7 @@ h2 {
     margin: 0px !important;
     right: 20px;
     font-weight: 500;
+    transition: 600ms;
 }
 
 #footertext {
@@ -340,6 +422,7 @@ h2 {
     left: 14px;
     margin: 0px !important;
     font-weight: 300;
+    transition: 600ms;
 }
 
 .line {
@@ -348,6 +431,7 @@ h2 {
     position: absolute;
     left: 40%;
     margin-left: -3px;
+    transition: 600ms;
   }
 
 .svgfooterbox {
@@ -398,7 +482,222 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
 }
-  
+
+.webframeabout {
+    display: grid;
+    grid-template-rows: 2fr 1fr 900px 1fr;
+    grid-template-columns: 1fr;
+    height: 100vh;
+}
+
+.mainaboutcontent {
+    grid-row: 3/4;
+    background-image: url(../img/aboutbackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
+    padding: 4%;
+}
+
+.h1bg{
+   display:none;
+}
+
+#h1bg {
+    font-size: 13rem;
+    color:#F4F4F4;
+}
+
+.aboutlogo {
+    grid-row: 1/2;
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    height: 100%;
+    width: 100%;
+}
+
+.biglogobox {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0%;
+    background-color: black;
+    border-color: white;
+    border-width: 10px;
+    border-style: solid;
+}
+
+#biglogo {
+    margin: 0 !important;
+    font-size: 5em !important;
+    left: 0;
+    transition: 600ms;
+}
+
+#abouttext {
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+
+.abouttextbox {
+    grid-row: 1/3;
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2:hover, .line:hover, #footertext:hover {
+    color: #57C3E7;
+    border-color: #57C3E7;
+    cursor: default;
+}
+
+
+.webframecontact {
+    display: grid;
+    grid-template-rows: 2fr 1fr 600px 1fr;
+    grid-template-columns: 1fr;
+    height: 100vh;
+}
+
+
+.maincontactcontent {
+    grid-row: 3/4;
+    background-image: url(../img/contactbg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 1fr;
+    padding: 7%;
+    padding-top: 0 !important;
+    margin: 0;
+    padding-bottom: 40px !important;
+}
+
+.pageheaderbox {
+    grid-row: 1/2;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-left: 4%;
+}
+
+#contactheader{
+    color: #8F8F8F;
+    font-size: 4em !important;
+}
+
+form {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 4fr 70px;
+    background-color: #D9D9D9;
+    height: 100%;
+    width: 100%;
+    padding: 2%;
+    column-gap: 5%;
+}
+
+input{ 
+    height: 70%;
+    width: 100%;
+    border: none;
+    display: flex;   
+    justify-content: start;
+    align-items: flex-start;
+    background-color: white;
+    font-family: 'Libre Baskerville', serif;
+    padding-left: 3%;
+}
+
+textarea {
+    border: none;
+    display: flex;   
+    font-family: 'Libre Baskerville', serif;
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.name {
+    grid-row: 1/2;
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email {
+    grid-row: 2/3;
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message {
+    grid-row: 3/4;
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.send {
+    grid-column: 1/3;
+    grid-row: 4/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.messagebox {
+    height: 80%;
+    width: 100%;
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.sendbutton {
+    height: 90%;
+    width: 60%;
+    border: none;
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    border: 1px;
+    border-style: inset;
+    border-color: black;
+    border-radius: 3px;
+    transition: all 350ms ease;
+}
+
+.sendbutton:hover {
+    box-shadow: 0px 0px 0px 2px #57C3E7 inset;
+    border-color: #57C3E7;
+}
+
 @media screen and (min-width: 510px) {
 
     .headerbg1 {
@@ -407,7 +706,7 @@ h2 {
         grid-template-rows: 1fr 1fr 1fr 1fr;
         height: 100%;
         width: 100%;
-        background-image: url(../img/textbackground.png);
+        background-image: url(../img/textbackground2.png);
         background-size: cover;
         background-position: top;
         background-repeat: no-repeat;
@@ -467,6 +766,14 @@ h2 {
 }
 
 @media screen and (min-width: 650px) {
+    #exampleheader {
+        font-size: 2em !important;
+    }
+
+    .sendbutton {
+        width: 40%;
+    }
+    
     h2 {
         font-family:'IBM Plex Sans Thai', sans-serif;
         font-size: 45px !important;
@@ -477,9 +784,6 @@ h2 {
         font-weight: 500;
     }
 
-    .hide {
-        display: flex;
-    }
     
     #footertext {
         font-family: 'IBM Plex Sans Thai', sans-serif;
@@ -498,7 +802,8 @@ h2 {
         left: 50%;
         margin-left: -3px;
       }
-    }
+}
+
 
 @media screen and (min-width: 768px) {
     .svgheaderbox {
@@ -516,6 +821,44 @@ h2 {
         align-items: center;
     }
 
+    .aboutlogo {
+        grid-row: 1/3;
+        grid-column: 1/2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+        height: 100%;
+        width: 100%;
+    }
+
+    .abouttextbox {
+        grid-row: 1/3;
+        grid-column: 2/3;
+        justify-content: flex-start;
+    }
+
+    .h1bg{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: -4%;
+        overflow: hidden;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .biglogobox {
+        height: 40%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        border-color: white;
+        border-width: 10px;
+        border-style: solid;
+    }
  
     .svgfooterbox {
         display: inline-flex;
@@ -591,47 +934,70 @@ h2 {
         align-items: center;
         margin: 0px;
     }
+
+    .name {
+        grid-row: 1/3;
+        grid-column: 1/2;
+    }
+    
+    .email {
+        grid-row: 1/3;
+        grid-column: 2/3;
+    }
 }
 
 @media screen and (min-width: 830px) {
+
+    .pheaderbg {
+        grid-row: 1/2;
+        grid-column: 1/4;
+        display: flex;
+        justify-content: safe center;
+        align-items: flex-start;
+        min-width: 0;
+        overflow: hidden;
+        flex-wrap: nowrap;
+    }
 
     h1 {
         font-family: 'Libre Baskerville', serif;
         color: black;
         font-size: 5.5rem !important;
         line-height: 1 !important;
-        padding-top: 5px !important;
+       
     }
 
     .example1 {
-        grid-row: 1/2;
-        height: 600px;
-        display: grid;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        grid-template-rows: 2fr 1fr;
-        grid-template-columns: 1fr; 
-        background-color: white;
-    }
-    
-    .example2 {
-        grid-row: 2/3;
-        height: 600px;
-        display: grid;
-        margin-bottom: 20px;
-        grid-template-rows: 2fr 1fr;
-        grid-template-columns: 1fr; 
-        background-color: white;
-    }
-    
-    .example3 {
         grid-row: 3/4;
         height: 600px;
         display: grid;
-        margin-top: -20px !important;
         grid-template-rows: 2fr 1fr;
         grid-template-columns: 1fr; 
         background-color: white;
+        margin-left:7%;
+        margin-right:7%;
+    }
+    
+    .example2 {
+        grid-row: 5/6;
+        height: 600px;
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+        grid-template-columns: 1fr; 
+        background-color: white;
+        margin-left:7%;
+        margin-right:7%;
+    }
+    
+    .example3 {
+        grid-row: 7/8;
+        height: 600px;
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+        grid-template-columns: 1fr; 
+        background-color: white;
+        margin-left:7%;
+        margin-right:7%;
     }
 
     .eximg1 {
@@ -687,7 +1053,6 @@ h2 {
     }
 
     .vb2 {
-        background-color: white;
         grid-row: 3/4;
         grid-column: 2/3;
     }
@@ -700,7 +1065,7 @@ h2 {
         height: 100%;
         width: 100%;
         flex-direction: column; 
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
     }
 
@@ -732,62 +1097,75 @@ h2 {
         transition: all 350ms ease;
     }
 
+    
+
     .portfoliotext {
         font-family: 'Inter', sans-serif;
         font-size: 1rem;
     }
-}
 
-.webframeabout {
-    display: grid;
-    grid-template-rows: 2fr 1fr 600px 1fr;
-    grid-template-columns: 1fr;
-    height: 100vh;
-}
+    .maincontactcontent {
+        grid-row: 3/4;
+        background-image: url(../img/contentbg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        padding: 7%;
+    padding-top: 0 !important;
+    margin: 0;
+    padding-bottom: 40px !important;
+    }
 
-.mainaboutcontent {
-    grid-row: 3/4;
-    background-image: url(../img/aboutbackground.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-}
-
-.webframecontact {
-    display: grid;
-    grid-template-rows: 2fr 1fr 800px 1fr;
-    grid-template-columns: 1fr;
-    height: 100vh;
-}
-
-
-.maincontactcontent {
-    grid-row: 3/4;
-    background-image: url(../img/contactbackground.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-}
-
-@media screen and (min-width: 1030px) {
-    h1 {
-        font-family: 'Libre Baskerville', serif;
-        color: black;
-        margin-top: -10px !important;
-        margin-bottom: -17px !important;
-        font-size: 6.6rem !important;
+    .mainhomecontent {
+        padding-bottom: 3%;
+        padding-Top: 2%;
     }
 }
 
-@media screen and (min-width: 1300px) {
+
+
+@media screen and (min-width: 1030px) {
+
+    .webframeabout {
+        grid-template-rows: 2fr 1fr 800px 1fr;
+    }
 
     h1 {
         font-family: 'Libre Baskerville', serif;
         color: black;
         margin-top: -10px !important;
-        margin-bottom: -17px !important;
+        font-size: 6.6rem !important;
+    }
+
+    .biglogobox {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        border-color: white;
+        border-width: 10px;
+        border-style: solid;
+    }
+
+    #biglogo {
+        font-size: 6em !important;
+    }
+
+   
+}
+
+
+@media screen and (min-width: 1300px) {
+
+    
+
+    h1 {
+        font-family: 'Libre Baskerville', serif;
+        color: black;
+        margin-top: -10px !important;
         font-size: 8rem !important;
     }
 
@@ -804,26 +1182,60 @@ h2 {
         margin: 0px;
         }
 
+        .biglogobox {
+            height: 70%;
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            border-color: white;
+            border-width: 10px;
+            border-style: solid;
+        }
+
+        #biglogo {
+            font-size: 8em !important;
+        }
+
+        .description, .description2 {
+            justify-content: center;
+        }
+        
+    }
+
+    @media screen and (min-width: 1600px) {
         .webframeabout {
-            display: grid;
-            grid-template-rows: 2fr 1fr 800px 1fr;
-            grid-template-columns: 1fr;
-            height: 100vh;
+            grid-template-rows: 2fr 1fr 600px 1fr;
+        }
+
+        #biglogo {
+            font-size: 10em !important;
+        }
+
+        .biglogobox {
+            height: 100%;
+            width: 90%;
+        }
+
+        .splitter1, .splitter2{
+            min-height: 330px;
+        }
+        .splitter0 {
+            max-height: 340px;
         }
     }
+
 
 /* media queries for larger screen size responsize design; MOBILE FIRST; either stack or dropdown bootstrap nav*/
 
 /* FONT: font-family: 'Nunito', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
-/* add sticky menu bar, add dropdown nav via bootstrap */
-
 /* 768px+ for desktop */
 
 /*
 
-/* change margins for different screen sizes on portfolio- check figma */
-
 /* change superfluous margins on mobile size header, make it same as 510px screen size */
 /* take out bootstrap script in html head and body */
+/* footer is zoinked at 648px; fix */
