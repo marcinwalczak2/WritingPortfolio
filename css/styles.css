@@ -24,6 +24,7 @@ h3 {
         font-size: 1.5em !important;
         font-style: italic;
         line-height: 0;
+        text-align: center;
     }
 
 h1:hover {
@@ -170,6 +171,7 @@ p {
 #exampleheader {
     color: #8F8F8F;
     font-size: 1.5em !important;
+    text-align: center;
 }
 
 .example1 {
@@ -279,6 +281,7 @@ p {
     height: 100%;
     width: 100%;
     flex-direction: column;
+    min-height:35px;
 }
 
 .viewbox2 {
@@ -287,6 +290,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height:35px;
     height: 100%;
     width: 100%;
     flex-direction: column;
@@ -447,7 +451,7 @@ h2 {
   }
 
 .svgfooterbox {
-    display: inline-flex;
+    display: none;
     position: relative;
     right: 0;
     width: 5%;
@@ -498,7 +502,7 @@ h2 {
 
 .webframeabout {
     display: grid;
-    grid-template-rows: 2fr 1fr 900px 1fr;
+    grid-template-rows: 2fr 1fr 1100px 1fr;
     grid-template-columns: 1fr;
     height: 100vh;
     overflow: auto;
@@ -711,6 +715,36 @@ textarea {
 .sendbutton:hover {
     box-shadow: 0px 0px 0px 2px #57C3E7 inset;
     border-color: #57C3E7;
+}
+
+@media screen and (max-width: 499px) {
+    .viewbox {
+        min-height: 30px;
+        max-height: 35px;
+    }
+
+    .viewbox2 {
+        min-height: 30px;
+        max-height: 35px;
+        margin-bottom: 10px !important;
+    }
+
+}
+
+@media screen and (min-width: 500px) {
+    .svgfooterbox {
+        display: inline-flex;
+        position: relative;
+        right: 0;
+        width: 5%;
+        height: 100px;
+        left: 15%;
+        background-color: black;
+        min-width: 50px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 }
 
 @media screen and (min-width: 510px) {
@@ -1142,7 +1176,7 @@ textarea {
     }
 
     .mainhomecontent {
-        padding-bottom: 3%;
+        padding-bottom: 15%;
         padding-Top: 2%;
     }
 }
